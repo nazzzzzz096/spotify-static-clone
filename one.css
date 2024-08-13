@@ -1,0 +1,368 @@
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sidebar{
+    background:black;
+    width:300px;
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    padding:10px;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:0;
+}
+
+.sidebar1{
+    background-color: #171717;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left:20px;
+    margin-bottom: 10px;
+    
+
+
+}
+.sidebar1 .logo{
+    width: 120px;
+    padding-top: 10px;;
+}
+.sidebar1 .logo img{
+    width:100%;
+    padding-left: 10px;
+    
+}
+.sidebar1 ul{
+    list-style: none;
+
+}
+.sidebar ul li{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.sidebar1 ul li a{
+    text-decoration: none;
+    color:rgb(187, 203, 216);
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.sidebar1 ul li a i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+/*    for home in the left side*/
+.home{
+    display: flex;
+    padding: 10px;
+    margin-left: 10px;
+}
+.home i{
+    color:white;
+    width: 20px;
+    margin-right: 10px;
+
+}
+.home h5{
+    color: white;
+    font-size: 20px;
+}
+/* for search in the left side */
+.search{
+    display: flex;
+    color:white ;
+    padding: 10px;
+    margin-left: 10px;
+}
+.search i{
+   width:20px;
+  margin-right: 10px;
+  color: white;
+}
+.search h5{
+    font-size:20px;
+}
+/* for left side text library */
+.sidebar .library{
+    display: flex;
+    align-content: space-between;
+    background-color: #171717;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    
+}
+.book i{
+    color:#969393;
+    padding-right: 10px;
+}
+.plus i{
+    
+    padding-left: 113px;
+    color: #969393;
+}
+.your h6{
+    color: rgb(176, 178, 179);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+/*for the  second row in the left side */
+.create-playlist{
+    background: #302f2f;
+    padding-top: 30px;
+    padding-left: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.sidebar-scroll{
+    height:120px;
+    overflow-y:auto;
+    
+
+}
+
+
+.create-playlist h4{
+    color:white;
+    font-size: 15px;
+}
+.create-playlist p{
+    color: white;
+    font-size: 12px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+.create-playlist button{
+    padding:10px 10px;
+    border:0;
+    border-radius: 20px;
+    width:141px;
+    text-align: center;
+    font-weight: 600;
+
+}
+.ld{
+    background-color: #171717;
+    height: 260px;
+    
+}
+.ld ul li a{
+    color:rgb(175, 174, 172);
+    text-decoration: none;
+    font-size: 12px;
+    margin:0 5px;
+    background-color: #171717;
+
+}
+.ld ul{
+    padding-top: 20px;
+}
+/* for the right side english button */
+.english{
+    
+    padding:3px 11px;
+    border:ipx solid;
+    border-radius: 20px;
+    width:101px;
+    text-align:fa-solid;
+    margin-bottom:20px;
+    font-weight: 600;
+    background-color: #171717;
+    color: white;
+    border:groove ;
+    float: left;
+
+
+}
+/* here starts the main section */
+.main-section{
+    margin-left: 300px;
+    background: #181818;
+    height:100vh;
+    overflow-y: auto;
+    margin-bottom: 100px;
+}
+/* first row in the right side*/
+.main-section .top{
+    padding:20px 30px;
+    background:#131212;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.arrow{
+   background: transparent;
+   border:0;
+   outline:0;
+   color:rgb(224, 219, 219);
+   font-size:22px;
+   margin-right: 15px;
+   
+}
+.sign{
+    background: transparent;
+    border:0;
+    outline:0;
+    color:rgb(224, 219, 219);
+    font-size:16px;
+    margin-right: 15px;
+}
+.login{
+    background-color: white;
+    border-radius:20px ;
+    font-size:16px;
+    padding:10px 16px;
+    font-weight:600;
+
+}
+
+ /* for all the rows of the same*/
+
+.spotify-playlist{
+    padding-left: 40px;
+    padding-bottom: 35px;
+}
+.spotify-playlist h2{
+color: white;
+font-size: 22px;
+padding:15px;
+
+}
+
+.spotify-playlist .card{
+    display: flex;
+    gap:20px;
+    overflow: hidden;
+}
+.spotify-playlist .card .item{
+    width:160px;
+    min-width:140px;
+    background-color:#272626;
+    border-radius: 6px;
+    cursor: pointer;
+    padding:15px;
+}
+
+.spotify-playlist .card .item img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom:10px;
+
+}
+.spotify-playlist .item h4{
+    color:white;
+}
+.spotify-playlist .item p{
+    color:#4e4646
+}
+
+.spotify-playlist .item .play-btn{
+    position:relative;
+}
+.spotify-playlist .card .item .play-btn i{
+    position: absolute;
+    border-radius: 50%;
+    padding:16px;
+    background:rgb(47, 151, 47);
+    right: 8px;
+    top:-60px;
+    
+}
+/* footer section*/
+.footer-section{
+    padding: 20px 50px;
+}
+.footer-section .footer{
+display: flex;
+justify-content: space-between;
+margin-top: 20px;
+
+}
+.footer-section .footer .footer-links
+{
+    display: flex;
+    justify-content: space-between;
+    gap:75px;
+
+}
+.footer-section .footer .footer-links div
+{
+    color: white;
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 16px;
+    margin-left: 20px;
+    
+}
+.footer-section .footer .footer-links ul li{
+    list-style: none;
+    margin: 6px 0;
+    margin-left: 20px;
+
+}
+.footer-section .footer .footer-links ul li a{
+    text-decoration: none;
+    color:#969293;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer .soicon i{
+    padding:20px;
+    background: #2a2727;
+    color: white;
+    border-radius: 50%;
+
+
+}
+hr{
+    margin: 20px 45px;
+    border:1px solid;
+    border-color: #969293;
+    outline: 0;
+}
+.last{
+    padding: 0 40px;
+    color:#969393;
+    font-size: 15px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+/* last fixed row*/
+.preview{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right,#f202ea,#5c4bbd);
+    position: fixed;
+    bottom: 0;
+    left:0;
+    right:0;
+    padding: 25px 40px;
+}
+.preview h4{
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+}
+.preview p{
+    font-size: 16px;
+    font-weight: 400;
+    color:white;
+}
+.preview button{
+    padding:9px;
+    font-weight: 600px;
+    border-radius: 20px;
+    border-style: none;
+}
